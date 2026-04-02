@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "sashulyaf-marketplace",
+  "description": "Collection of custom Claude Code plugins by SashulyaF",
+  "owner": {
+    "name": "SashulyaF"
+  },
+  "plugins": [
+    {
+      "name": "sashulyaf-plugin-skills",
+      "description": "Custom productivity skills for Claude Code",
+      "source": "./plugins/sashulyaf-plugin-skills",
+      "category": "productivity"
+    }
+  ]
+}
