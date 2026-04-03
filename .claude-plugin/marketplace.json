@@ -7,9 +7,9 @@
   },
   "plugins": [
     {
-      "name": "sashulyaf-plugin-skills",
-      "description": "Custom productivity skills for Claude Code",
-      "source": "./plugins/sashulyaf-plugin-skills",
+      "name": "update-commands-table",
+      "description": "Manages a reference table of Claude Code commands and skills with availability info across CMD and VS Code",
+      "source": "./plugins/update-commands-table",
       "category": "productivity"
     }
   ]

@@ -35,7 +35,7 @@
 | `/exit` | Command | Exit CLI (alias: `/quit`) | Yes | No |
 | `/export [filename]` | Command | Export conversation | Yes | No |
 | `/extra-usage` | Command | Extra usage when at limits | Yes | ? |
-| `/fast [on\|off]` | Command | Fast mode | Yes | Yes |
+| `/fast [on|off]` | Command | Fast mode | Yes | Yes |
 | `/feedback` | Command | Feedback (alias: `/bug`) | Yes | ? |
 | `/help` | Command | Help | Yes | Yes |
 | `/hooks` | Command | Hook configurations | Yes | No |

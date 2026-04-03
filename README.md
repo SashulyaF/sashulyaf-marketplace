@@ -4,13 +4,7 @@ Collection of custom Claude Code plugins by SashulyaF.
 
 ## Plugins
 
-### sashulyaf-plugin-skills
-
-Custom productivity skills for Claude Code.
-
-**Available skills:**
-
-| Skill | Description |
+| Plugin | Description |
 |---|---|
 | `update-commands-table` | Manages a reference table of Claude Code commands and skills with availability info across CMD and VS Code |
 
@@ -21,9 +15,9 @@ Custom productivity skills for Claude Code.
    /plugin marketplace add sashulyaf-marketplace
    ```
 
-2. Install the plugin:
+2. Install a plugin:
    ```
-   /plugin add sashulyaf-plugin-skills
+   /plugin add update-commands-table
    ```
 
 ## Usage
