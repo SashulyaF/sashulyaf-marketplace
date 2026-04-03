@@ -2,6 +2,25 @@
 
 Collection of custom Claude Code plugins by SashulyaF.
 
+## Project structure
+
+```
+sashulyaf-marketplace/
+├── .claude-plugin/
+│   └── marketplace.json              # Marketplace catalog
+├── plugins/
+│   └── update-commands-table/
+│       ├── .claude-plugin/
+│       │   └── plugin.json           # Plugin manifest + SessionStart hook
+│       └── skills/
+│           └── update-commands-table/
+│               ├── SKILL.md          # Skill instructions
+│               └── references/
+│                   └── claude-code-commands.md  # Template (copied to project on first run)
+├── LICENSE
+└── README.md
+```
+
 ## Plugins
 
 | Plugin | Description |
@@ -15,10 +34,12 @@ Collection of custom Claude Code plugins by SashulyaF.
    /plugin marketplace add sashulyaf-marketplace
    ```
 
-2. Install a plugin:
+2. Install a plugin (project scope only):
    ```
-   /plugin add update-commands-table
+   /plugin add update-commands-table --scope project
    ```
+
+> **Warning:** Do not install globally. The plugin copies a template file to `docs/` on session start. Global installation will create this file in every project.
 
 ## Usage
 

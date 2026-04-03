@@ -3,5 +3,17 @@
   "description": "Manages a reference table of Claude Code commands and skills with availability info across CMD and VS Code",
   "author": {
     "name": "SashulyaF"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f docs/claude-code-commands.md || (mkdir -p docs && cp \"${CLAUDE_PLUGIN_ROOT}/skills/update-commands-table/references/claude-code-commands.md\" docs/claude-code-commands.md)"
+          }
+        ]
+      }
+    ]
   }
 }

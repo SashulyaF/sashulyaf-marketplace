@@ -6,13 +6,13 @@ description: >
   "в Claude появилась новая команда", "исправь информацию о команде в таблице", "удали команду из таблицы",
   "update commands table", "add a new command to the table", "update command availability from the table", "remove a command from the table".
   Updates the reference table of Claude Code commands and skills.
-version: 0.3.0
+version: 0.4.0
 ---
 
 # Skill: update Claude Code commands table
 
-The table file is located next to this SKILL.md at `references/claude-code-commands.md`.
-To determine the absolute path, find the location of this SKILL.md and resolve the path relative to it.
+The table file is located at `docs/claude-code-commands.md` in the user's project root.
+It is automatically copied there on first session start. All edits must be made to this project-local copy, never to the template inside the plugin.
 
 ## Table structure
 
@@ -57,7 +57,7 @@ Ask for:
 
 ### Step 3 — apply changes
 
-1. Read the file `references/claude-code-commands.md`
+1. Read the file `docs/claude-code-commands.md`
 2. Apply the change:
    - When adding — insert the row in the correct alphabetical position
    - When updating — find the row and modify the relevant field
