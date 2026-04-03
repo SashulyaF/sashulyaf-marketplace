@@ -6,7 +6,7 @@ description: >
   "в Claude появилась новая команда", "исправь информацию о команде в таблице", "удали команду из таблицы",
   "update commands table", "add a new command to the table", "update command availability from the table", "remove a command from the table".
   Updates the reference table of Claude Code commands and skills.
-version: 0.2.0
+version: 0.3.0
 ---
 
 # Skill: update Claude Code commands table
@@ -16,10 +16,9 @@ To determine the absolute path, find the location of this SKILL.md and resolve t
 
 ## Table structure
 
-| Command | Type | Description | CMD | VS Code 1.113 |
-|---|---|---|---|---|
+| Command | Description | CMD | VS Code 1.113 |
+|---|---|---|---|
 
-- **Type**: `Command` (built-in client function) or `**Skill**` (executed by model, bold)
 - **CMD**: `Yes` / `No` / `?`
 - **VS Code 1.113**: `Yes` / `No` / `?` / `UI button`
 - Rows are sorted alphabetically by command name
@@ -41,7 +40,6 @@ Wait for the user's response before proceeding.
 **If adding a new command:**
 Ask for:
 - Command name (e.g. `/foo`)
-- Type: command or skill?
 - Short description (what it does)
 - Availability in CMD (`Yes` / `No` / `?`)
 - Availability in VS Code (`Yes` / `No` / `?`)
@@ -76,5 +74,5 @@ Show the user the changed row(s) in table format and confirm the file has been u
 - Never edit the file without getting all required data from the user
 - When removing — always get explicit confirmation
 - Update the date in the `> Last updated:` line in the file header
-- Type `**Skill**` in the table is always bold (with `**`)
 - If the user doesn't know a value for an availability field — use `?`
+- Command names and descriptions must be in English only. If the user provides them in another language, automatically translate to English before adding to the table
