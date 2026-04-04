@@ -11,7 +11,9 @@ sashulyaf-marketplace/
 ├── plugins/
 │   └── update-commands-table/
 │       ├── .claude-plugin/
-│       │   └── plugin.json           # Plugin manifest + SessionStart hook
+│       │   └── plugin.json           # Plugin manifest + hooks
+│       ├── scripts/
+│       │   └── protect-file.sh       # PreToolUse guard (blocks direct edits)
 │       └── skills/
 │           └── update-commands-table/
 │               ├── SKILL.md          # Skill instructions

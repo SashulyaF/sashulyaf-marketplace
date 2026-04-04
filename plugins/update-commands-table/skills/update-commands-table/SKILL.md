@@ -6,7 +6,7 @@ description: >
   "в Claude появилась новая команда", "исправь информацию о команде в таблице", "удали команду из таблицы",
   "update commands table", "add a new command to the table", "update command availability from the table", "remove a command from the table".
   Updates the reference table of Claude Code commands and skills.
-version: 0.4.0
+version: 0.5.0
 ---
 
 # Skill: update Claude Code commands table
