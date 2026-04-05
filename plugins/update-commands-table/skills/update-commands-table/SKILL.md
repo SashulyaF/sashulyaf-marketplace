@@ -2,7 +2,7 @@
 name: update-commands-table
 description: >
   This skill should be used when the user asks to "обнови таблицу команд", "добавь команду в таблицу",
-  "обнови команду в таблице", "добавь новый скилл в таблицу", "обнови доступность команды в талице",
+  "обнови команду в таблице", "добавь новый скилл в таблицу", "обнови доступность команды в таблице",
   "в Claude появилась новая команда", "исправь информацию о команде в таблице", "удали команду из таблицы",
   "update commands table", "add a new command to the table", "update command availability from the table", "remove a command from the table".
   Updates the reference table of Claude Code commands and skills.

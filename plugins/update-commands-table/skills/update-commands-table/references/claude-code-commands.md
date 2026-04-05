@@ -77,7 +77,6 @@
 | `/stickers` | Order stickers | Yes | ? |
 | `/tasks` | Background tasks (alias: `/bashes`) | Yes | ? |
 | `/terminal-setup` | Terminal shortcuts | Yes | No |
-| `/testPluginUpdate` | Test plugin update via marketplace | No | No |
 | `/theme` | Color theme | Yes | No |
 | `/update-config` | Hooks and automations in `settings.json` | Yes | Yes |
 | `/upgrade` | Upgrade plan | Yes | ? |
